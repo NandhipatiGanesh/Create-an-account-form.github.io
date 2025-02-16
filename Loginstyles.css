@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.signuppage{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.signup{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.signup:nth-child(2){
+    background: #EFE7FF;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    height: 600px;
+    padding: 40px;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+.right.image{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.middle.image{
+    position: relative;
+    width: 80%;
+}
+.left.image {
+    left: -100px;
+    position: absolute;
+    bottom: 0;
+}
+.right.image {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.inner_signup_box{
+    width: 70%;
+    height: 80vh;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner_signup_box h2{
+    margin-bottom: 12px;
+    font-size: 34px;
+}
+.forimagelog{
+    width: 45px;
+    height: 50px;
+    border-radius: 12px;
+    background: #EFE7FF;
+    margin-bottom: 30px;
+}
+.One{
+    margin-top: 30px;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 8px;
+    margin-bottom: 14px;
+    width: 80%;
+
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 5px;
+    cursor: pointer;
+}
+input{
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid #EFE7FF;
+    width: 100%;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.signup-btn{
+    width: 80%;
+    height: 52px;
+    min-height: 48px;
+    color: #FFF;
+    background-color: #984CFF;
+    border-radius: 12px;
+    border-color: transparent;
+    margin-top: 6px;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    width: 80%;
+}
+.button-box button{
+    width: 100%;
+    height: 48px;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+span{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: underline;  
+    color: #984CFF;
+}
+.already{
+    margin-top: 19px;
+    cursor: pointer;
+}
+::placeholder{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+@media (max-width:768px) {
+    .signuppage{
+        padding-top: 60px;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .signup{
+        width: 100%;
+    }
+    .inner_signup_box {
+        width: 80%;
+    }
+    .signup:nth-child(2){
+        display: none;
+    }
+}
+@media (max-width:500px) {
+    .inner_signup_box {
+        width: 90%;
+    }
+    .input-box{
+        width: 90%;
+    }
+    .already{
+        font-size: 14px;
+    }
+    .inner_signup_box h2{
+        font-size: 24px;
+    }
+    .inner_signup_box p{
+        font-size: 14px;
+    }
+    .signup-btn{
+        width: 90%;
+    }
+    .button-box{
+        width: 90%;
+    }
+}
+@media (max-width:380px) {
+    .inner_signup_box {
+        width: 100%;
+    }
+    .button-box button{
+        font-size: 14px;
+    }
+}
